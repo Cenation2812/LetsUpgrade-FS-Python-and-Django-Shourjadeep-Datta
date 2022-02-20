@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block users %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h6 class="card-title">Account holder name:{{users.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Age:{{users.age}}</h6>
+          <p class="card-text">Account Balance: Rs.{{users.balance}}</p>
+          <a href="/tranx/{{users.id}}"><button type="submit" class="btn btn-outline-dark">Make a transaction</button></a>
+          <!-- <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+{% endblock %}

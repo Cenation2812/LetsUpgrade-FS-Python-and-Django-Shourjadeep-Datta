@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+
+{% block content1 %}
+
+<div id="contain1">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Account Holder</th>
+            <!-- <th scope="col">Age</th> -->
+            <!-- <th scope = "col">Contact</th>
+            <th scope = "col">Balance</th> -->
+            <th scope = "col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for customer in customers %}
+            <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{customer.name}}</td>
+                <td>{{customer.age}}</td>
+                <td>{{customer.contact}}</td>
+                <td>{{customer.balance}}</td>
+                <td><a href="/deleteaccount/{{customer.id}}"><button type="submit" class="btn btn-outline-danger">Delete</button></a>
+                    <br/><br/>
+                    <a href="/viewaccount/{{customer.id}}"><button type="submit" class="btn btn-outline-dark">View account details</button></a>
+                </td>
+                <!-- <td><a href="/allcustomers"><button type="submit" class="btn btn-primary">Show all</button></a></td> -->
+            </tr>
+            {% endfor %}
+                <!-- <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr> -->
+        </tbody>
+      </table>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block new %}
+<div id="cust">
+  <h4>Your account balance is Rs {{customer.balance}}</h4>
+    <form action="/tranx/{{customer.id}}" method="POST">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name of account holder</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" placeholder="Transact to which account holder?">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Amount</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="amt" placeholder="enter transaction amount">
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Transact</button>
+        <p>{{customer.message}}</p>
+      </form>
+</div>
+{% endblock %}

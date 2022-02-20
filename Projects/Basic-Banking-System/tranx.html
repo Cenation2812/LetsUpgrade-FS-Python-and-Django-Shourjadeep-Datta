@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% block user1 %}
+
+    <div id="contain1">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Sr.No</th>
+                <th scope="col">Account Holder</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for customer in customers %}
+                <tr>
+                    <th scope="row">{{loop.index}}</th>
+                    <td>{{customer.name}}</td>
+                    <td><a href="/tranx/{{customer.id}}"><button type="submit" class="btn btn-outline-dark">Select</button></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+    </div>
+
+
+{% endblock %}

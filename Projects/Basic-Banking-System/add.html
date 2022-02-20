@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div id="cust">
+    <form action="/addcustomers" method="POST">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name of account holder</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" placeholder="enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Age of account holder</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="age" placeholder="enter your age">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Contact number</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="contact" placeholder="enter your phone number">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Account balance</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="balance" placeholder="enter account balance">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email id</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="enter email id">
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Register</button>
+      </form>
+</div>
+{% endblock %}
