@@ -1,0 +1,28 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.April2021 {width: 90%; background-color: #04AA6D;} /* Green */
+.May2021 {width: 80%; background-color: #2196F3;} /* Blue */
+.June2021 {width: 65%; background-color: #f44336;} /* Red */
+.July2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.August2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.September2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.October2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.November2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.December2021 {width: 60%; background-color: #808080;} /* Dark Grey */
+.January2022 {width: 60%; background-color: #808080;} /* Dark Grey */
+.February2022 {width: 60%; background-color: #808080;} /* Dark Grey */
+.March2022 {width: 60%; background-color: #808080;} /* Dark Grey */
