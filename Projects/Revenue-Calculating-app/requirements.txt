@@ -1,0 +1,5 @@
+gunicorn==19.9.0
+Werkzeug==2.0.1
+Flask==2.0.1
+requests== 2.25.1
+firebase_admin == 5.0.1
