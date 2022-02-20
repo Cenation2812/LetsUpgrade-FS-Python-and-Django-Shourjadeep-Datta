@@ -1,0 +1,46 @@
+{% extends 'common.html' %}
+
+{% block data %}
+
+<br/>
+
+<div class="shadow-lg p-3 mb-5 bg-body rounded">
+<div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Letsupgrade students</div>
+  <div class="card-body">
+    <h5 class="card-title">Total students enrolled</h5>
+    <p class="card-text">{{number}}</p>
+  </div>
+</div>
+</div>
+
+<canvas id="bar-chart" style="width:100%;height: 50px;"></canvas>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+
+<script type="text/javascript">
+  var xValues = ["April2021", "May2021", "June2021", "July2021", "August2021","September2021","October2021","November2021","December2021","January2022","February2022","March2022"];
+  //var value = [12,42,12,43,6,4,23,35,4,23,35];
+  //var yValues = document.getElementById("q1").innerHTML;
+  // console.log(yValues)
+   var barColors = ["red", "green","blue","violet","grey","black",'grey',"blue","purple","orange","pink","brown"];
+
+  new Chart(document.getElementById("bar-chart"), {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: {{revenue | tojson}}
+      }]
+    },
+    options: {
+      legend: {display: true},
+      title: {
+        display: true,
+        text: "Revenue earned from student enrollment"}
+      }
+  });
+</script>
+{% endblock data %}
+

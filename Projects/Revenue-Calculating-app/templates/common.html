@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>LetsUpgrade</title>
+<link rel="icon" href="https://letsupgrade.in/favicon.ico">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://open-source.extive.eu/micro-interaction-theme.css">
+<link rel="stylesheet" href="">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <body class="p-3 mb-2 bg-light text-dark">
+
+      <div id ="2" class="shadow-lg p-3 mb-5 bg-body rounded">
+            <nav class="navbar navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                  <img src="https://letsupgrade.in/_nuxt/img/logo_white.9de2fcc.png" alt="" width="200" height="60"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <br/>
+                    <li class="nav-item">
+                      <a aria-current="page" href="/subject/Python"><button type="button" class="btn btn-success">python students</button></a>
+                    </li>
+                    <br/>
+                    <li class="nav-item">
+                      <a href="/subject/Java"><button type="button" class="btn btn-success">Java Students</button></a>
+                    </li>
+                    <br/>
+                    <li class="nav-item">
+                      <a href="/subject/C++" id="navbarDropdown" aria-expanded="false"><button type="button" class="btn btn-success">C++ students</button></a>
+                    </li>
+                      <br/>
+                      <li class="nav-item">
+                    <a href="/showrevenue"><button type="button" class="btn btn-success">View revenue</button></a>
+                    </li>
+                    <br/>
+                    <br/>
+                      <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul> -->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                  </ul>
+                  <form class="d-flex">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <a href="/"><button class="btn btn-danger" type="button">Home</button></a>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          {% block home %}    {% endblock home %}
+          {% block register %} {% endblock register %}
+          {% block allstudents %}  {% endblock allstudents %}
+          {% block data %}  {% endblock data %}
+</body>
+
+</html>
