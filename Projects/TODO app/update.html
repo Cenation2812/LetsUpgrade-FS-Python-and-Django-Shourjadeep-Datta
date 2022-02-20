@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<div id="a1">
+    <form action="/update/{{todo.id}}" method="POST">
+        <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Title</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" value="{{todo.title}}" aria-describedby="emailHelp" name="title" placeholder="enter title of todo">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Description</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" value="{{todo.desc}}" name="desc" placeholder="enter description">
+            <button type="submit" class="btn btn-primary">Update</button>
+          </form>
+    </div>
+  {% endblock %}
